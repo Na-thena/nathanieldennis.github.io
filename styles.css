@@ -1643,3 +1643,92 @@ textarea:focus-visible {
     margin-top: 1.25rem;
   }
 }
+/* ================================
+   CREDENTIAL CARD SPACING FIX
+   ================================ */
+
+.credentials-group {
+  margin-top: 4.5rem;
+}
+
+.credentials-group:first-of-type {
+  margin-top: 3.5rem;
+}
+
+.credentials-group-heading {
+  margin-bottom: 1.75rem;
+}
+
+.credentials-group-heading .eyebrow {
+  margin: 0;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.credential-card {
+  padding: 1.5rem 1.75rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.credential-card:hover {
+  border-color: rgba(123, 150, 134, 0.45);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
+}
+
+.credential-card h3 {
+  margin: 0;
+  max-width: 34rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.credential-issuer {
+  margin: 1rem 0 0;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.credentials-grid-single {
+  grid-template-columns: 1fr;
+}
+
+.credentials-group:last-child {
+  margin-top: 4.5rem;
+}
+
+@media (max-width: 700px) {
+  .credentials-group {
+    margin-top: 3.5rem;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .credential-card {
+    padding: 1.5rem;
+  }
+
+  .credential-issuer {
+    margin-top: 0.85rem;
+  }
+}
