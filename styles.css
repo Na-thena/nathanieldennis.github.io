@@ -1826,3 +1826,29 @@ textarea:focus-visible {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.credential-card {
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.credential-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.credential-issuer {
+  margin: 0.75rem 0 0;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
