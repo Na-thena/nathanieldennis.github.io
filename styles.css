@@ -1598,3 +1598,11 @@ textarea:focus-visible {
   }
 }
    
+.tools-section {
+  text-align: left;
+}
+
+.tools-section .eyebrow,
+.tools-section h2 {
+  text-align: left;
+}
