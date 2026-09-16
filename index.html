@@ -312,9 +312,9 @@
 <section class="tools-section">
   <div class="container">
     <p class="eyebrow">TOOLS &amp; WORKFLOWS</p>
-    <h2> Tools that keep work moving..</h2>
+    <h2>Fluent across the systems executives actually use.</h2>
     <p class="section-desc">
-      I focus on outcomes over specific tools, adapting quickly to whatever tech stack your team already relies on.
+      Adaptability matters more than any single platform — I move between whatever stack an executive or team already relies on.
     </p>
   </div>
 
@@ -386,8 +386,12 @@
 
   .tools-marquee-track {
     display: flex;
+    align-items: stretch;
     width: max-content;
-    animation: marquee-scroll 120s linear infinite;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    animation: marquee-scroll 190s linear infinite;
   }
 
   .tools-marquee-track:hover {
@@ -396,7 +400,7 @@
 
   .tools-list {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-shrink: 0;
   }
 
@@ -405,19 +409,20 @@
     font-size: 1.125rem;
     color: inherit;
     opacity: 0.85;
-    padding: 1.25rem 2.75rem;
+    padding: 1.5rem 2.75rem;
     border-right: 1px solid rgba(255, 255, 255, 0.12);
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
   }
 
   @keyframes marquee-scroll {
     0% {
-      transform: translateX(0%);
+      transform: translate3d(0, 0, 0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translate3d(-50%, 0, 0);
     }
   }
 </style>
