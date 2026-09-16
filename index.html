@@ -306,57 +306,121 @@
     </section>
 
 
-    <!-- =========================
-     TOOLS
+<!-- =========================
+      TOOLS SECTION
 ========================== -->
-
 <section class="tools-section">
-
   <div class="container">
-
-    <p class="eyebrow">
-      TOOLS &amp; WORKFLOWS
+    <p class="eyebrow">TOOLS &amp; WORKFLOWS</p>
+    <h2>Fluent across the systems executives actually use.</h2>
+    <p class="section-desc">
+      Adaptability matters more than any single platform — I move between whatever stack an executive or team already relies on.
     </p>
-
-    <h2>
-      Tools that keep work moving.
-    </h2>
-
-    <div class="tools-marquee">
-
-      <div class="tools-marquee-track">
-
-        <div class="tools-list">
-
-          <span>Google Workspace</span>
-          <span>Microsoft Office</span>
-          <span>Outlook</span>
-          <span>Notion</span>
-          <span>Asana</span>
-          <span>Slack</span>
-          <span>Zoom</span>
-          <span>Cisco Webex</span>
-          <span>Canva</span>
-          <span>Adobe Photoshop</span>
-          <span>HubSpot</span>
-          <span>ChatGPT</span>
-          <span>Claude</span>
-          <span>Google Apps Script</span>
-          <span>Calendly</span>
-          <span>Loom</span>
-          <span>Grammarly</span>
-          <span>Dropbox</span>
-          <span>DocuSign</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
   </div>
 
+  <div class="tools-marquee">
+    <div class="tools-marquee-track">
+      <!-- Primary List -->
+      <div class="tools-list">
+        <span>Google Workspace</span>
+        <span>Microsoft Office</span>
+        <span>Outlook</span>
+        <span>Notion</span>
+        <span>Asana</span>
+        <span>Slack</span>
+        <span>Zoom</span>
+        <span>Cisco Webex</span>
+        <span>Canva</span>
+        <span>Adobe Photoshop</span>
+        <span>HubSpot</span>
+        <span>ChatGPT</span>
+        <span>Claude</span>
+        <span>Google Apps Script</span>
+        <span>Calendly</span>
+        <span>Loom</span>
+        <span>Grammarly</span>
+        <span>Dropbox</span>
+        <span>DocuSign</span>
+      </div>
+
+      <!-- Duplicated List for Infinite Loop -->
+      <div class="tools-list" aria-hidden="true">
+        <span>Google Workspace</span>
+        <span>Microsoft Office</span>
+        <span>Outlook</span>
+        <span>Notion</span>
+        <span>Asana</span>
+        <span>Slack</span>
+        <span>Zoom</span>
+        <span>Cisco Webex</span>
+        <span>Canva</span>
+        <span>Adobe Photoshop</span>
+        <span>HubSpot</span>
+        <span>ChatGPT</span>
+        <span>Claude</span>
+        <span>Google Apps Script</span>
+        <span>Calendly</span>
+        <span>Loom</span>
+        <span>Grammarly</span>
+        <span>Dropbox</span>
+        <span>DocuSign</span>
+      </div>
+    </div>
+  </div>
 </section>
+
+<style>
+  .tools-section {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .tools-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 2.5rem;
+  }
+
+  .tools-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 35s linear infinite;
+  }
+
+  .tools-marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  .tools-list {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .tools-list span {
+    white-space: nowrap;
+    font-size: 1.125rem;
+    color: inherit;
+    opacity: 0.85;
+    padding: 1.25rem 2.75rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
 
 
     <!-- =========================
