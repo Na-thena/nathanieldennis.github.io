@@ -569,96 +569,91 @@
 
 
     <!-- =========================
-          APPROACH
-    ========================== -->
+      APPROACH SECTION
+========================== -->
+<section id="approach" class="section approach-section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">APPROACH</p>
+      <h2>Anticipate. Organize. Execute. Close the loop.</h2>
+    </div>
 
-    <section id="approach" class="section approach-section">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <p class="eyebrow">
-            APPROACH
-          </p>
-
-          <h2>
-            Anticipate. Organize. Execute. Close the loop.
-          </h2>
-
-        </div>
-
-
-        <div class="approach-grid">
-
-          <div class="approach-item">
-
-            <span>01</span>
-
-            <h3>
-              Anticipate
-            </h3>
-
-            <p>
-              Identify what needs attention next and prepare before it becomes
-              urgent.
-            </p>
-
-          </div>
-
-
-          <div class="approach-item">
-
-            <span>02</span>
-
-            <h3>
-              Organize
-            </h3>
-
-            <p>
-              Turn information, priorities, and moving pieces into a clear
-              working structure.
-            </p>
-
-          </div>
-
-
-          <div class="approach-item">
-
-            <span>03</span>
-
-            <h3>
-              Execute
-            </h3>
-
-            <p>
-              Move tasks forward with accuracy, discretion, and attention to
-              detail.
-            </p>
-
-          </div>
-
-
-          <div class="approach-item">
-
-            <span>04</span>
-
-            <h3>
-              Close the Loop
-            </h3>
-
-            <p>
-              Track follow-ups, communicate progress, and make sure important
-              details do not disappear after the initial action.
-            </p>
-
-          </div>
-
-        </div>
-
+    <div class="approach-grid">
+      <div class="approach-item">
+        <span>01</span>
+        <h3>Anticipate</h3>
+        <p>
+          Identify what needs attention next and prepare before it becomes urgent.
+        </p>
       </div>
 
-    </section>
+      <div class="approach-item">
+        <span>02</span>
+        <h3>Organize</h3>
+        <p>
+          Turn information, priorities, and moving pieces into a clear working structure.
+        </p>
+      </div>
+
+      <div class="approach-item">
+        <span>03</span>
+        <h3>Execute</h3>
+        <p>
+          Move tasks forward with accuracy, discretion, and attention to detail.
+        </p>
+      </div>
+
+      <div class="approach-item">
+        <span>04</span>
+        <h3>Close the Loop</h3>
+        <p>
+          Track follow-ups, communicate progress, and make sure important details do not disappear after the initial action.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .approach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 2.5rem;
+  }
+
+  .approach-item {
+    padding: 2.5rem 1.75rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  /* Responsive Grid Adjustments */
+  @media (max-width: 992px) {
+    .approach-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .approach-item:nth-child(1),
+    .approach-item:nth-child(2) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .approach-grid {
+      grid-template-columns: 1fr;
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .approach-item {
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+  }
+</style>
 
 
     <!-- =========================
