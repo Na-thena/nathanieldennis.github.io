@@ -820,48 +820,73 @@ button {
    ========================================================= */
 
 .experience-section {
-  background: var(--bg-primary);
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .experience-list {
-  max-width: 900px;
-
-  border-top: 1px solid var(--border-subtle);
+  width: 100%;
+  margin-top: 3rem;
 }
 
 .experience-item {
   display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
-  gap: 60px;
+  grid-template-columns: 48px minmax(0, 1fr);
+  column-gap: 1.25rem;
+  align-items: start;
+  padding: 2.25rem 0;
+  border-top: 1px solid var(--border-subtle);
+}
 
-  padding: 36px 0;
-
+.experience-item:last-child {
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.experience-company {
-  margin-bottom: 5px;
-
-  color: var(--accent-copper);
-
-  font-size: 13px;
+.experience-number {
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
   font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--accent-copper);
+  padding-top: 0.35rem;
 }
 
-.experience-item h3 {
-  color: var(--text-primary);
-
-  font-family: var(--font-display);
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 1.2;
+.experience-content {
+  max-width: 780px;
 }
 
-.experience-item > p {
+.experience-company {
+  margin: 0 0 0.4rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-sage);
+}
+
+.experience-content h3 {
+  margin: 0 0 0.75rem;
+}
+
+.experience-content p:not(.experience-company) {
+  margin: 0;
+  max-width: 720px;
   color: var(--text-secondary);
-
-  font-size: 13px;
   line-height: 1.75;
+}
+
+@media (max-width: 700px) {
+  .experience-item {
+    grid-template-columns: 32px minmax(0, 1fr);
+    column-gap: 0.85rem;
+    padding: 1.75rem 0;
+  }
+
+  .experience-content {
+    max-width: none;
+  }
 }
 
 
