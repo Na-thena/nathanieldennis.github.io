@@ -638,7 +638,7 @@ button {
 
   margin-top: 54px;
 
-  animation: tools-marquee 18s linear infinite;
+  animation: tools-marquee 12s linear infinite;
 }
 
 .tools-list::before {
