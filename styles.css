@@ -1546,11 +1546,11 @@ textarea:focus-visible {
     font-size: 0.65rem;
     white-space: normal;
   }
-}
+   
 .portrait-placeholder img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center center;
+  object-position: 48% center;
 }
