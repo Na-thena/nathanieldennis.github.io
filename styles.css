@@ -1532,3 +1532,114 @@ textarea:focus-visible {
     min-height: auto;
   }
 }
+/* ================================
+   CREDENTIALS REFINEMENT
+   ================================ */
+
+.credentials-group {
+  margin-top: 4.5rem;
+}
+
+.credentials-group:first-of-type {
+  margin-top: 3.5rem;
+}
+
+.credentials-group-heading {
+  margin-bottom: 1.75rem;
+}
+
+.credentials-group-heading .eyebrow {
+  margin: 0;
+}
+
+/* Credential grid */
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+/* Individual credential cards */
+
+.credential-card {
+  padding: 1.75rem;
+  min-height: 170px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.credential-card:hover {
+  border-color: rgba(123, 150, 134, 0.45);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
+}
+
+.credential-card h3 {
+  margin: 0;
+  max-width: 34rem;
+
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.credential-issuer {
+  margin: 1.5rem 0 0;
+
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+/* Digital proficiency */
+
+.credentials-grid-single {
+  grid-template-columns: 1fr;
+}
+
+.credential-featured {
+  min-height: 140px;
+}
+
+/* Recognition */
+
+.credentials-group:last-child {
+  margin-top: 4.5rem;
+}
+
+
+/* ================================
+   MOBILE
+   ================================ */
+
+@media (max-width: 700px) {
+
+  .credentials-group {
+    margin-top: 3.5rem;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .credential-card {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+
+  .credential-issuer {
+    margin-top: 1.25rem;
+  }
+}
