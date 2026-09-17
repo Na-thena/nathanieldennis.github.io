@@ -685,13 +685,18 @@ button {
   background: var(--bg-primary);
 }
 
+.work-section .section-heading {
+  margin-bottom: 52px;
+}
+
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px 28px;
 }
 
 .work-card {
+  min-width: 0;
   overflow: hidden;
 
   border: 1px solid var(--border-subtle);
@@ -712,33 +717,28 @@ button {
 .work-image {
   position: relative;
 
-  aspect-ratio: 16 / 9;
+  width: 100%;
+  aspect-ratio: 16 / 10;
 
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  overflow: hidden;
 
-  padding: 16px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #2D3630,
-      #1E2522
-    );
+  background: #f3f3f1;
 }
 
-.work-image span {
-  padding: 7px 11px;
+.work-image img {
+  display: block;
 
-  border-radius: var(--radius-pill);
+  width: 100%;
+  height: 100%;
 
-  background: var(--accent-sage);
-  color: var(--bg-primary);
+  object-fit: cover;
+  object-position: center;
 
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  transition: transform 0.5s ease;
+}
+
+.work-card:hover .work-image img {
+  transform: scale(1.015);
 }
 
 .work-content {
@@ -765,11 +765,41 @@ button {
   font-weight: 500;
 }
 
-.work-content > p:last-child {
+.work-content > p:not(.work-label) {
+  max-width: 560px;
+
   color: var(--text-secondary);
 
   font-size: 13px;
   line-height: 1.7;
+}
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 20px;
+}
+
+.work-tags span {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 7px 11px;
+
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: var(--text-secondary);
+
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1;
+
+  white-space: nowrap;
 }
 
 
@@ -1215,7 +1245,8 @@ button {
   }
 
   .work-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 22px;
   }
 
   .approach-grid {
@@ -1379,10 +1410,23 @@ button {
   }
 
 
-  /* Work */
+  /* Selected Work */
 
   .work-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .work-section .section-heading {
+    margin-bottom: 36px;
+  }
+
+  .work-image {
+    aspect-ratio: 16 / 10;
+  }
+
+  .work-content {
+    padding: 22px;
   }
 
 
@@ -1518,5 +1562,3 @@ textarea:focus-visible {
   }
 
 }
-***
-style
