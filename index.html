@@ -74,94 +74,139 @@
   <main>
 
     <!-- =========================
-          HERO
-    ========================== -->
+      HERO SECTION
+========================== -->
+<section id="home" class="hero section">
+  <div class="container hero-grid">
 
-    <section id="home" class="hero section">
+    <div class="hero-content">
+      <p class="eyebrow">HELLO, I'M NATHANIEL</p>
 
-      <div class="container hero-grid">
+      <h1>Executive support that keeps priorities moving.</h1>
 
-        <div class="hero-content">
+      <p class="hero-text">
+        Making executive life easier by bringing clarity to priorities,
+        structure to the details, and follow-through to what matters most.
+      </p>
 
-          <p class="eyebrow">
-            HELLO, I'M NATHANIEL
-          </p>
+      <div class="hero-actions">
+        <a
+          href="https://calendly.com/nathaniel-topue-athena/30min"
+          class="button button-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Book a Consultation
+        </a>
 
-          <h1>
-            Executive support that keeps priorities moving.
-          </h1>
-
-          <p class="hero-text">
-            Making executive life easier by bringing clarity to priorities,
-            structure to the details, and follow-through to what matters most.
-          </p>
-
-          <div class="hero-actions">
-
-            <a
-              href="https://calendly.com/nathaniel-topue-athena/30min"
-              class="button button-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book a Consultation
-            </a>
-
-            <a
-              href="#work"
-              class="button button-secondary"
-            >
-              View My Work
-            </a>
-
-          </div>
-
-          <div class="social-links">
-
-            <a
-              href="https://www.linkedin.com/in/ndtopue"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-
-            <a href="mailto:loriclegacy.dennis@gmail.com">
-              Email
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <!-- CIRCULAR PORTRAIT -->
-
-        <div class="hero-visual">
-
-          <div class="portrait-frame">
-
-            <div class="portrait-placeholder">
-
-              <img
-                src="2.jpg"
-                alt="Nathaniel Dennis Topue"
-              >
-
-            </div>
-
-          </div>
-
-          <div class="hero-badge" aria-hidden="true">
-            EXECUTIVE SUPPORT • OPERATIONS • FOLLOW-THROUGH •
-          </div>
-
-        </div>
-
+        <a href="#work" class="button button-secondary">
+          View My Work
+        </a>
       </div>
 
-    </section>
+      <div class="social-links">
+        <span class="social-label">LET'S CONNECT</span>
+        <a href="https://www.linkedin.com/in/ndtopue" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:loriclegacy.dennis@gmail.com">Email</a>
+      </div>
+    </div>
 
+    <!-- DUAL OVERLAPPING PORTRAIT CIRCLES -->
+    <div class="hero-visual">
+      <!-- Main Primary Circle -->
+      <div class="main-portrait-frame">
+        <img src="2.jpg" alt="Nathaniel Dennis Topue">
+      </div>
+
+      <!-- Overlapping Secondary Circle with Name Badge -->
+      <div class="secondary-portrait-frame">
+        <img src="Untitled design (1).jpg" alt="Nathaniel Dennis - Executive Partner">
+        <div class="portrait-name-badge">
+          <span class="badge-name">Nathaniel Dennis</span>
+          <span class="badge-title">Executive Partner</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .hero-visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* Main Right Circle */
+  .main-portrait-frame {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #0f3d32;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  }
+
+  .main-portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Overlapping Left Circle */
+  .secondary-portrait-frame {
+    position: absolute;
+    bottom: -15px;
+    left: -25px;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #0f3d32;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  }
+
+  .secondary-portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Name Overlay Badge */
+  .portrait-name-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 0 12px;
+    background: rgba(12, 22, 19, 0.88);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(4px);
+  }
+
+  .portrait-name-badge .badge-name {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .portrait-name-badge .badge-title {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    margin-top: 2px;
+  }
+</style>
 
     <!-- =========================
           ABOUT
